@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2034aaa7-a761-4fb5-9668-76e4a294a2d2" name="更改" comment="" />
+    <list default="true" id="2034aaa7-a761-4fb5-9668-76e4a294a2d2" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/_helper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/_helper.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="27SbCp64WfkmfvTd2pLSh93jQtO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649316310296</updated>
-      <workItem from="1649316311537" duration="1885000" />
+      <workItem from="1649316311537" duration="2628000" />
     </task>
     <servers />
   </component>
