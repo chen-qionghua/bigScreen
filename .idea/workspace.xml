@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2034aaa7-a761-4fb5-9668-76e4a294a2d2" name="更改" comment="提取createChartOptions文件">
+    <list default="true" id="2034aaa7-a761-4fb5-9668-76e4a294a2d2" name="更改" comment="修改grid">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/chart-2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart-2.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/base-chart-options.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/base-chart-options.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649316310296</updated>
-      <workItem from="1649316311537" duration="21380000" />
+      <workItem from="1649316311537" duration="21621000" />
     </task>
     <task id="LOCAL-00001" summary="scss添加rem生成函数">
       <created>1649319083601</created>
@@ -100,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649377597132</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修改grid">
+      <created>1649377775701</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649377775701</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +130,7 @@
     <MESSAGE value="添加grid-gap空隙" />
     <MESSAGE value="柱形图示例1完成" />
     <MESSAGE value="提取createChartOptions文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="提取createChartOptions文件" />
+    <MESSAGE value="修改grid" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改grid" />
   </component>
 </project>
