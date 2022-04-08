@@ -9,12 +9,7 @@ export const Chart2 = () => {
   useEffect(() => {  let myChart = echarts.init(divRef.current);
     myChart.setOption(createEchartOptions({
       ...baseChartOptions,
-      grid: {
-        x: px(100),
-        y: px(40),
-        x2: px(40),
-        y2: px(40),
-      },
+
       axisLabel:{
         formatter(val){
           if(val.length > 2){
