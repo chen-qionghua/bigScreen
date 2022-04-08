@@ -75,13 +75,10 @@ export const Chart3 = () => {
     }))},[])
 
   return (
-    <div className="bordered 破获排名">
+    <div className="bordered 发案趋势">
       <h2>发案趋势分析</h2>
       <div ref={divRef}className="chart"></div>
-      <div className="legend">
-        <span className="first"/> 破案排名1
-        <span className="second"/> 破案排名2
-      </div>
+
     </div>
   )
 }

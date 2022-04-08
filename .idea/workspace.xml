@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2034aaa7-a761-4fb5-9668-76e4a294a2d2" name="更改" comment="chart2添加渐变">
-      <change afterPath="$PROJECT_DIR$/src/components/chart-3.tsx" afterDir="false" />
+    <list default="true" id="2034aaa7-a761-4fb5-9668-76e4a294a2d2" name="更改" comment="chart3完成">
+      <change afterPath="$PROJECT_DIR$/src/components/chart-4.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/chart-2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart-2.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/chart-3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart-3.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.tsx" afterDir="false" />
     </list>
@@ -59,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649316310296</updated>
-      <workItem from="1649316311537" duration="28926000" />
+      <workItem from="1649316311537" duration="30306000" />
     </task>
     <task id="LOCAL-00001" summary="scss添加rem生成函数">
       <created>1649319083601</created>
@@ -138,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649381079468</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="chart3完成">
+      <created>1649386004591</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1649386004591</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +173,7 @@
     <MESSAGE value="chart2删除多余的 baseEchartOptions" />
     <MESSAGE value="初步实现chart2" />
     <MESSAGE value="chart2添加渐变" />
-    <option name="LAST_COMMIT_MESSAGE" value="chart2添加渐变" />
+    <MESSAGE value="chart3完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="chart3完成" />
   </component>
 </project>
