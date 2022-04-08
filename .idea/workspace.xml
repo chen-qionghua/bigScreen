@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2034aaa7-a761-4fb5-9668-76e4a294a2d2" name="更改" comment="添加grid-gap空隙">
+    <list default="true" id="2034aaa7-a761-4fb5-9668-76e4a294a2d2" name="更改" comment="柱形图示例1完成">
+      <change afterPath="$PROJECT_DIR$/src/components/chart-1.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/chart-2.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/base-chart-options.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/create-echart-options.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/px.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="27SbCp64WfkmfvTd2pLSh93jQtO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -50,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649316310296</updated>
-      <workItem from="1649316311537" duration="17568000" />
+      <workItem from="1649316311537" duration="21087000" />
     </task>
     <task id="LOCAL-00001" summary="scss添加rem生成函数">
       <created>1649319083601</created>
@@ -80,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649330010342</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="柱形图示例1完成">
+      <created>1649337764479</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649337764479</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +119,7 @@
     <MESSAGE value="添加header图片" />
     <MESSAGE value="添加grid布局" />
     <MESSAGE value="添加grid-gap空隙" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加grid-gap空隙" />
+    <MESSAGE value="柱形图示例1完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="柱形图示例1完成" />
   </component>
 </project>
