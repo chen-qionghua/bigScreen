@@ -39,12 +39,24 @@ export const Chart2 = () => {
         {
           name: '破案排名1',
           type: 'bar',
-          data: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+          data: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+          itemStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+              { offset: 0, color: '#2034f9' },
+              { offset: 1, color: '#01a2ff' }
+            ])
+          },
         },
         {
           name: '破案排名2',
           type: 'bar',
-          data: [2, 3, 4, 5, 6, 7, 8, 9, 10]
+          data: [2, 3, 4, 5, 6, 7, 8, 9, 10],
+          itemStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+              { offset: 0, color: '#b92ae8' },
+              { offset: 1, color: '#626ede' }
+            ])
+          },
         }
       ]
     }))},[])
@@ -55,7 +67,7 @@ export const Chart2 = () => {
       <div ref={divRef}className="chart"></div>
       <div className="legend">
         <span className="first"/> 破案排名1
-        <span className="second"/> 破案排名1
+        <span className="second"/> 破案排名2
       </div>
     </div>
   )
