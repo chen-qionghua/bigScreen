@@ -8,7 +8,6 @@ export const Chart2 = () => {
   const divRef = useRef(null)
   useEffect(() => {  let myChart = echarts.init(divRef.current);
     myChart.setOption(createEchartOptions({
-      ...baseChartOptions,
 
       axisLabel:{
         formatter(val){
