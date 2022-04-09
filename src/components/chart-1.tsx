@@ -17,7 +17,6 @@ export const Chart1 =() => {
           formatter(val){
             if(val.length > 2){
               const reallyVal = val.substring(0,2) +'\n' + val.substring(2,val.length);
-              console.log(reallyVal)
               return reallyVal
             }else{
               return val

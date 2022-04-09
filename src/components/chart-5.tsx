@@ -11,8 +11,8 @@ export const Chart5 = () => {
       <table>
         <thead>
         <tr>
-          <th>年份</th><th>破案数</th><th>抓获嫌疑人</th><th>并串案件</th><th>现勘录入</th>
-          <th>视侦录入</th><th>合成案件数</th><th>合计</th>
+          <th>年份</th><th>破案数</th><th>抓获<br/>嫌疑人</th><th>并串案件</th><th>现勘录入</th>
+          <th>视侦录入</th><th>合成<br/>案件数</th><th>合计</th>
         </tr>
         </thead>
         <tbody>
