@@ -55,7 +55,6 @@ export const Chart4 = () => {
     <div className="bordered 案发时段">
       <h2>案发时段分析</h2>
       <div ref={divRef} className="chart"></div>
-
     </div>
   )
 }

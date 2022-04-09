@@ -6,21 +6,7 @@ import {px} from '../shared/px';
 import china from '../geo/china.json';
 import {useEffect, useRef} from 'react';
 import React from 'react';
-let tempData = [
-  {
-    name: '甘肃省',
-    value: [231,421],
-  },
-  {
-    name: '青海省',
-    value: [23,42],
-  },
-  {
-    name: '四川省',
-    value:[23,42],
-  },
 
-];
 export const Chart6 = () => {
 
   const divRef = useRef(null);
@@ -32,21 +18,7 @@ export const Chart6 = () => {
     myChart.setOption(createEchartOptions({
       xAxis: {show: false},
       yAxis: {show: false},
-      // geo:{
-      //   blur:{
-      //     itemStyle:{
-      //       shadowBlur:10
-      //     }
-      //   },
-      //   // itemStyle: {
-      //   //   normal: {
-      //   //     areaColor: '#01215c',
-      //   //
-      //   //
-      //   //   },
-      //   // }
-      //
-      // },
+
       series: [
 
         {
