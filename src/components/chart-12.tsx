@@ -2,64 +2,64 @@ import React, {useEffect, useRef} from 'react';
 import * as echarts from 'echarts';
 import {px} from '../shared/px';
 import {createEchartOptions} from '../shared/create-echart-options';
-console.log('ssssss')
 export const Chart12 =() => {
   const divRef = useRef(null)
+  const colors = ['#F46064', '#F38E1C', '#1CDB7C', '#8D70F8', '#33A4FA'];
+  const data = [
+    {value: 0.08, name: '东岗路'},
+    {value: 0.06, name: '段家滩'},
+    {value: 0.11, name: '雁北'},
+    {value: 0.09, name: '五泉山'},
+    {value: 0.12, name: '中山路'},
+    {value: 0.06, name: '庆阳路'},
+    {value: 0.08, name: '武都路'},
+    {value: 0.08, name: '酒泉路'},
+    {value: 0.08, name: '天水路'},
+  ];
   useEffect(() => {  let myChart = echarts.init(divRef.current);
 // 绘制图表
     myChart.setOption(createEchartOptions({
-      xAxis: {
-        data: ['城关区', '七里河区', '西固区', '安宁区', '红谷区', '永登区','皋兰区','渝中区','兰州新区'],
-        axisLabel:{
-          fontSize:px(12),
-          interval:0,
-          formatter(val){
-            if(val.length > 2){
-              const reallyVal = val.substring(0,2) +'\n' + val.substring(2,val.length);
-              return reallyVal
-            }else{
-              return val
-            }
-          }
-        },
-        axisTick:{
-          show:false
-        },
-        axisLine:{
-          lineStyle:{
-            color:"#083b70"
-          }
-        }
-      },
-      yAxis: {
-        axisLabel:{
-          fontSize:px(12),
-          interval:0
-        },
-        axisLine:{
-          show:true,
-          lineStyle:{
-            color:"#083b70"
-          }
-        },
-        splitLine:{
-          show:false
+
+      xAxis: {show: false},
+      yAxis: {show: false},
+      grid: {x: 0, x2: 0, y: 0, y2: 0, containLabel: true},
+      legend: {
+        orient: 'vertical',
+        left: 'left',
+        top: 'center',
+        textStyle: {color: 'white'},
+        itemWidth: px(10),
+        itemHeight: px(10),
+        formatter(name) {
+          const value = data.find(i => i.name === name)?.value * 100 + '%';
+          return name + ' ' + value;
         }
       },
       series: [
         {
-          name: '销量',
-          type: 'bar',
-          data: [10, 20, 36, 41, 15, 26, 37, 18, 29]
+          center: ['60%', '50%'],
+          type: 'pie',
+          radius: '80%',
+          label: {show: false},
+          labelLine: {show: false},
+          data: data,
+          emphasis: {
+            itemStyle: {
+              shadowBlur: 10,
+              shadowOffsetX: 0,
+              shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+          }
         }
-      ],
-
+      ]
     }));},[])
 
   return (
-    <div className="bordered 管辖统计">
-      <h2>案发派出所管辖统计</h2>
-      <div ref={divRef}className="chart"></div>
+    <div className="年龄段-图1">
+      <div className="chart">
+        <div className="main" ref={divRef}/>
+      </div>
+
     </div>
   )
 }

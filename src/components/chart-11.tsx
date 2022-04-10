@@ -2,7 +2,6 @@ import React, {useEffect, useRef} from 'react';
 import * as echarts from 'echarts';
 import {px} from '../shared/px';
 import {createEchartOptions} from '../shared/create-echart-options';
-console.log('ssssss')
 export const Chart11 =() => {
   const divRef = useRef(null)
   const colors = ['#F46064', '#F38E1C', '#1CDB7C', '#8D70F8', '#33A4FA'];

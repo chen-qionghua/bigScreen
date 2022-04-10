@@ -55,7 +55,7 @@ export const Home = () => {
           <div className="bordered row2 案发街道">
             <h2>案发街道统计</h2>
             <div className="charts">
-              {/*<Chart12/>*/}
+              <Chart12/>
               {/*<Chart13/>*/}
             </div>
           </div>

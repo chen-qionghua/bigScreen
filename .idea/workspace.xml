@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2034aaa7-a761-4fb5-9668-76e4a294a2d2" name="更改" comment="chart10完成">
+    <list default="true" id="2034aaa7-a761-4fb5-9668-76e4a294a2d2" name="更改" comment="chart11完成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/chart-11.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart-11.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/chart-12.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart-12.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649316310296</updated>
-      <workItem from="1649316311537" duration="58360000" />
+      <workItem from="1649316311537" duration="59240000" />
     </task>
     <task id="LOCAL-00001" summary="scss添加rem生成函数">
       <created>1649319083601</created>
@@ -206,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649573696480</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="chart11完成">
+      <created>1649576994964</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1649576994964</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +254,7 @@
     <MESSAGE value="chart9完成并修改样式bug" />
     <MESSAGE value="chart10、11、12、13完成布局" />
     <MESSAGE value="chart10完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="chart10完成" />
+    <MESSAGE value="chart11完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="chart11完成" />
   </component>
 </project>
