@@ -76,6 +76,10 @@
     }
     >.section4 {
       grid-area: box4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
     }
     >.section5 {
       grid-area: box5;
@@ -107,15 +111,13 @@
       height: px(363);
       > .charts {
         width: 100%;flex: 1;
-        border: 1px solid red;
         display: flex; padding: px(30);
       }
       &-图1, &-图2, &-图3 {
         flex: 1;
-        border: 1px solid green;
         display: flex; flex-direction: column;
       }
-      &-图1, &-图2 {
+      &-图1, &-图2, &-图3 {
         .legend {
           height: px(40);
           display: flex;
@@ -141,7 +143,7 @@
           > .main {flex: 1;
             }
           > .text {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            color: #33a4fa; font-size: px(40); text-shadow: 0 0 px(20) #33a4fa;font-weight: bold;}
+            color: #33a4fa; font-size: px(40); text-shadow: 0 0 px(20) #33a4fa;font-weight: bold;cursor: default }
         }
       }
       &-图2 {
@@ -149,6 +151,11 @@
         .legend {
           justify-content: flex-start;
         }
+      }
+      &-图3 {
+        border: 1px solid #08397d;
+        flex-shrink: 0;
+        h3 {font-size: px(20); color: #7ab6db; margin-top: px(6);text-shadow: 0 0 px(20) #33a4fa;}
       }
 
 
@@ -214,7 +221,7 @@
         > .first, > .second {
           display: inline-block;
           width: px(18); height: px(12);
-          background: red; margin: 0 px(10);
+           margin: 0 px(10);
         }
         .first {
           background: linear-gradient(90deg, #2034f9 0%, #01a2ff 100%);

@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import * as echarts from 'echarts';
 import {createEchartOptions} from '../shared/create-echart-options';
 const  px = (n) => n/ 2420 * (window as any).pageWidth
-
+let angle = 0;
 export const Chart8 = () => {
   const divRef = useRef(null);
   const colors = ['#856BED', '#F46064', '#F38E1C', '#1CDB7C', '#33A4FA'];
@@ -14,6 +14,7 @@ export const Chart8 = () => {
       yAxis: {show: false},
       legend: {show: false},
       series: [
+
         {
           name: '访问来源',
           type: 'pie',
@@ -37,7 +38,8 @@ export const Chart8 = () => {
             {value: 0.28, name: '40-50'},
             {value: 0.32, name: '50-60'},
           ]
-        }
+        },
+
       ]
     }))},[])
 
