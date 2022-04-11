@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2034aaa7-a761-4fb5-9668-76e4a294a2d2" name="更改" comment="chart14完成">
+    <list default="true" id="2034aaa7-a761-4fb5-9668-76e4a294a2d2" name="更改" comment="fix1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/chart-10.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart-10.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/chart-11.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart-11.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/chart-12.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart-12.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/chart-2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart-2.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/chart-3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart-3.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/chart-6.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart-6.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/chart-9.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chart-9.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649316310296</updated>
-      <workItem from="1649316311537" duration="78032000" />
+      <workItem from="1649316311537" duration="79179000" />
     </task>
     <task id="LOCAL-00001" summary="scss添加rem生成函数">
       <created>1649319083601</created>
@@ -241,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649581884530</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix1">
+      <created>1649657968488</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1649657968488</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +258,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="scss添加rem生成函数" />
     <MESSAGE value="添加header图片" />
     <MESSAGE value="添加grid布局" />
     <MESSAGE value="添加grid-gap空隙" />
@@ -284,6 +282,7 @@
     <MESSAGE value="chart12完成" />
     <MESSAGE value="chart13完成" />
     <MESSAGE value="chart14完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="chart14完成" />
+    <MESSAGE value="fix1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix1" />
   </component>
 </project>
