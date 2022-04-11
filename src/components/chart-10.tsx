@@ -4,9 +4,10 @@ import {px} from '../shared/px';
 import {createEchartOptions} from '../shared/create-echart-options';
 export const Chart10 =() => {
   const divRef = useRef(null)
-  useEffect(() => {  let myChart = echarts.init(divRef.current);
-// 绘制图表
-    myChart.setOption(createEchartOptions({
+  const myChart = useRef(null)
+  const data = [40, 25, 23, 20, 35]
+  const x = (data) =>{
+    myChart.current.setOption(createEchartOptions({
       xAxis: {
         data: ['入室抢劫', '当街偷盗', '团伙诈骗', '刑事案件', '民事案件'],
         axisLabel:{
@@ -49,7 +50,7 @@ export const Chart10 =() => {
         {
           name: '销量',
           type: 'bar',
-          data: [40, 25, 23, 20, 35],
+          data: data,
           barWidth : 20,
           itemStyle: {
             color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [
@@ -60,7 +61,18 @@ export const Chart10 =() => {
         }
       ],
 
-    }));},[])
+    }))
+  }
+  useEffect(() => {
+     myChart.current = echarts.init(divRef.current);
+     x(data)
+    setInterval(() => {
+      const newData = [Math.random()*50, Math.random()*50, Math.random()*50, Math.random()*50, Math.random()*50]
+      x(newData)
+
+    },2000)
+// 绘制图表
+    },[])
 
   return (
       <div ref={divRef} className="chart"></div>

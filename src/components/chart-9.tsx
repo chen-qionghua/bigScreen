@@ -5,9 +5,15 @@ import {createEchartOptions} from '../shared/create-echart-options';
 const  px = (n) => n/ 2420 * (window as any).pageWidth
 export const Chart9 = () => {
   const divRef = useRef(null)
-  useEffect(() => {
-    let myChart = echarts.init(divRef.current);
-    myChart.setOption(createEchartOptions( {
+  const myChart =useRef(null)
+  const data = [
+      0.19, 0.20, 0.26,
+      0.35, 0.26, 0.20,
+      0.08, 0.06
+    ]
+
+  const x = (data)=> {
+    myChart.current.setOption(createEchartOptions( {
       color: '#F7A110',
       xAxis: {
         type: 'category',
@@ -28,11 +34,7 @@ export const Chart9 = () => {
       },
       series: [{
         type: 'line',
-        data: [
-          0.19, 0.20, 0.26,
-          0.35, 0.26, 0.20,
-          0.08, 0.06
-        ],
+        data: data,
         symbol: 'circle',
         symbolSize: px(12),
         lineStyle: {width: px(2)},
@@ -46,12 +48,35 @@ export const Chart9 = () => {
           }]),
         }
       }]
-    }))},[])
+    }))
+  }
+  useEffect(() => {
+    myChart.current = echarts.init(divRef.current);
+    x(data)
+
+     setInterval(()=>{
+       // const y = Math.random().toFixed(2)
+       const newData =[
+         Math.random().toFixed(2), Math.random().toFixed(2), Math.random().toFixed(2),
+         Math.random().toFixed(2), Math.random().toFixed(2), Math.random().toFixed(2),
+         Math.random().toFixed(2), Math.random().toFixed(2)
+       ]
+
+       x(newData)
+
+     },2000)
+    // setInterval(()=>{
+    //   x(data)
+    //
+    // },4000)
+    },[])
 
   return (
     <div className="年龄段-图3">
-    <h3>犯罪年龄趋势图</h3>
+      <h3>犯罪年龄趋势图</h3>
       <div ref={divRef} className="chart"></div>
     </div>
   )
 }
+
+

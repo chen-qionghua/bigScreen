@@ -10,7 +10,12 @@ export const Chart11 =() => {
     myChart.setOption(createEchartOptions({
 
       color: colors,
-
+      yAxis:{
+        show:false,
+      },
+      xAxis:{
+        show:false,
+      },
       series: [
         {
           startAngle: 80,
@@ -187,7 +192,7 @@ export const Chart11 =() => {
     }));},[])
 
   return (
-    <div className="年龄段-图1">
+    <div className="chart11">
       <div className="chart">
         <div className="main" ref={divRef}/>
       </div>

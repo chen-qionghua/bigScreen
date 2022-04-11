@@ -88,11 +88,15 @@ export const Chart6 = () => {
       <div className="wrapper">
         <div ref={divRef} className="chart"/>
         <div className="legend bordered">
-          <span className="icon" style={{background: colors['甘肃省']}}/>甘肃籍
-          <span className="icon" style={{background: colors['四川省']}}/>四川籍
-          <span className="icon" style={{background: colors['青海省']}}/>青海籍
+          <span className="icon" style={{background: colors['甘肃省']}}/>
+          <span className="icon" style={{background: colors['四川省']}}/>
+          <span className="icon" style={{background: colors['青海省']}}/>
         </div>
         <div className="notes">此地图仅显示了中国的部分区域</div>
+        <div className="radar-wrapper">
+        <div className="radar"></div>
+        <span className="text">实时监控中</span>
+        </div>
       </div>
     </div>
   );

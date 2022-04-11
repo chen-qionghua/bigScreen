@@ -16,9 +16,9 @@ export const Chart12 =() => {
     {value: 0.08, name: '酒泉路'},
     {value: 0.08, name: '天水路'},
   ];
-  useEffect(() => {  let myChart = echarts.init(divRef.current);
-// 绘制图表
-    myChart.setOption(createEchartOptions({
+  const myChart = useRef(null)
+  const x = (data) => {
+    myChart.current.setOption(createEchartOptions({
 
       xAxis: {show: false},
       yAxis: {show: false},
@@ -31,7 +31,7 @@ export const Chart12 =() => {
         itemWidth: px(10),
         itemHeight: px(10),
         formatter(name) {
-          const value = data.find(i => i.name === name)?.value * 100 + '%';
+          const value = (data.find(i => i.name === name)?.value * 100).toFixed(0) + '%';
           return name + ' ' + value;
         }
       },
@@ -52,10 +52,30 @@ export const Chart12 =() => {
           }
         }
       ]
-    }));},[])
+    }))
+  }
+  useEffect(() => {
+     myChart.current = echarts.init(divRef.current);
+     x(data)
+    setInterval(() => {
+      const newData = [
+        {value:  Math.random().toFixed(2), name: '东岗路'},
+        {value:  Math.random().toFixed(2), name: '段家滩'},
+        {value:  Math.random().toFixed(2), name: '雁北'},
+        {value:  Math.random().toFixed(2), name: '五泉山'},
+        {value:  Math.random().toFixed(2), name: '中山路'},
+        {value:  Math.random().toFixed(2), name: '庆阳路'},
+        {value:  Math.random().toFixed(2), name: '武都路'},
+        {value:  Math.random().toFixed(2), name: '酒泉路'},
+        {value:  Math.random().toFixed(2), name: '天水路'},
+      ];
+      x(newData)
+    },2000)
+// 绘制图表
+    },[])
 
   return (
-    <div className="年龄段-图1">
+    <div className="chart12">
       <div className="chart">
         <div className="main" ref={divRef}/>
       </div>
